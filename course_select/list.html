@@ -112,15 +112,15 @@
             <tr>
                 <th class="order_title" scope="col">#</th>
                 <th class="course_id_title" scope="col">科目代碼</th>
-                <th rowspan="2" class="course_name_title" scope="col">科目名稱</th>
+                <th  class="course_name_title" scope="col">科目名稱</th>
                 <th class="teacher_name_title" scope="col">教師</th>
                 <th class="course_time_title" scope="col">時間</th>
                 <th class="course_classroom_title" scope="col">教室</th>
                 <th class="course_credit_title" scope="col">學分</th>
                 <th class="course_status_title" scope="col">課程狀態</th>
                 <th class="course_selected_status_title" scope="col">選課狀態</th>
-                <th rowspan="2" class="course_mynote_title" scope="col">我的備註</th>
-                <th class="course_syllabus_title course_opinion_title course_test_title" scope="col">大綱｜教學意見｜考古題</th>
+                <th  class="course_mynote_title" scope="col">我的備註</th>
+                <th class="course_syllabus_title course_opinion_title course_test_title" scope="col">大綱｜教學意見與考古題</th>
 
                 <th class="delete_from_list" scope="col">刪除</th>
             </tr>
@@ -129,7 +129,7 @@
             <tr>
                 <th data-th="#" class="order" scope="row">1<!--用i讓他跑for迴圈--></th>
                 <td data-th="科目代碼：" class="course_id" >703025001<!--科目代碼--></td>
-                <td data-th="科目名稱：" rowspan="2" class="course_name" >
+                <td data-th="科目名稱："  class="course_name" >
                     <a href="course_evaluation.html">資料庫系統<!--科目名稱--></a>
                 </td>
                 <td data-th="教師：" class="teacher_name" >
@@ -141,7 +141,7 @@
                 <td data-th="學分：" class="course_credit" >3.0<!--課程學分--></td>
                 <td data-th="課程狀態：" class="course_status" >已額滿<!--課程狀態--></td>
                 <td data-th="選課狀態：" class="course_selected_status" >已選上<!--選課狀態--></td>
-                <td data-th="我的備註："rowspan="2" class="course_mynote" >
+                <td data-th="我的備註：" class="course_mynote" >
                     <form class="form">
                         <input type="text" value="老師人超好，但..好..難">
                             <!--可自由填寫的備註-->
@@ -155,18 +155,11 @@
                         https://newdoc.nccu.edu.tw/teaschm/1082/schmPrv.jsp-yy=108&smt=2&num=703025&gop=00&s=1.html-->
                     </button>
                     <!--教學意見-->
-                    <a data-toggle="modal" data-target="#opinion">
-                        <button class="btn btn-round" >
-                            <!--onclick="location.href='course_opinion'" -->
-                            <i class="text-primary fa fa-comment"></i>
-                        </button>
-                    </a>
-                    <!--考古題-->
-                    <a download href="1082_703025001_test.pdf">
-                        <button class="btn btn-round" >
-                            <i class="text-primary fa fa-download"></i>
-                        </button>
-                    </a>
+                    <!--<a data-toggle="modal" data-target="#opinion">-->
+                    <button class="btn btn-round" onclick="location.href='course_opinion.html'" >
+                        <!--onclick="location.href='course_opinion.html'" -->
+                        <i class="text-primary fa fa-comment"></i>
+                    </button>
                 </td>
                 <td data-th="刪除" class="delete_from_list" >
 
