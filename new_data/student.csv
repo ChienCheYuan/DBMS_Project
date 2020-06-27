@@ -1,0 +1,4 @@
+﻿studient_id,syudent_name,student_grade,mjor,double_major,minor_one,minor_two,gender,credit,password
+s101,Amy,1,CS,,,,Female,15,amy101
+s102,John,2,CS,,DELC,,Male,18,john102
+s103,Kenny,4,CS,STAT,,,Male,25,kenny103
